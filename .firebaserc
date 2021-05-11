@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "tictactoe-240bb",
+    "tictactoe": "tictactoe-240bb",
+    "tic-tac-toe": "tictactoe-240bb"
+  }
+}

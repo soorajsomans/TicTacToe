@@ -1,0 +1,25 @@
+<nb-layout-header fixed style="float: center;" >
+    <!-- Insert header here -->
+    
+    <h2 style="float: center;">Tic Tac Toe</h2>
+</nb-layout-header>
+    <button  nbButton outline status="danger" (click)="newGame()"> Start New Game</button>
+<br>
+<h3>Current Player : {{ player }}</h3>  
+<br>
+<main left class="colored-column-success">
+    <app-square *ngFor="let val of squares; let i = index;" 
+        [value] ="val"
+        (click) = "makeMove(i,dialog)" >
+    </app-square>
+</main>
+
+<ng-template #dialog let-data let-ref="dialogRef">
+    <nb-card>
+      <nb-card-header style="font-size:x-large;">Congratulations</nb-card-header>
+      <nb-card-body style="font-size:large;">{{ data }}</nb-card-body>
+      <nb-card-footer>
+        <button nbButton (click)="ref.close()">Close</button>
+      </nb-card-footer>
+    </nb-card>
+  </ng-template>

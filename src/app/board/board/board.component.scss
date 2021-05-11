@@ -1,0 +1,18 @@
+main{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 0px;
+}
+
+app-square{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px grey solid;
+    height: 100px;
+    width: 100px;
+}
+
